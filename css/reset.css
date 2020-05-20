@@ -7,3 +7,18 @@ textarea,button,form {
     margin: 0;
     padding: 0;
 }
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; 
+    font-size: 13px;    
+    line-height: 1.5;}
+
+/* a 링크 초기화 */
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #390;
+}
