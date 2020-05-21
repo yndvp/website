@@ -30,9 +30,7 @@
     background: url(../img/header_bg.jpg) center top repeat-x
 }
 #contents {
-    width: 100%;
-    height: 800px;
-    background: #222;
+
 }
 #footer {
     width: 100%;
@@ -42,19 +40,13 @@
 
 /* 컨텐츠 레이아웃 */
 #cont-nav {
-    width: 100%;
-    height: 200px;
-    background: #333;
+    background-color: #f6fdff;
 }
 #cont_tit {
-    width: 100%;
-    height: 200px;
-    background: #444;
+    background-color: #EAF7FD;
 }
 #cont-ban {
-    width: 100%;
-    height: 200px;
-    background: #555;
+    background-color: #dceff7;
 }
 #cont_cont {
     width: 100%;
@@ -71,9 +63,6 @@
 }
 
 /* 헤더 */
-.header {
-
-}
 .header .header-menu {
     text-align: right;
 }
@@ -140,4 +129,96 @@
 }
 .header .header-icon a.icon4:hover {
     background-position: -60px -180px;
+}
+
+/* float: left로 인한 영역깨짐(height:0) 방지법 
+1. 깨지는 영역에 똑같이 float: left를 사용한다.(Not recommended->모든 박스에 float:left를 사용해야 한다.)
+2. float의 성질을 차단하는 clear: both를 사용한다.(Not recommended->박스 구조가 복잡해지면 어떤 영역이 깨졌는지 확인할 수 없다.)
+3. float을 사용한 상위 박스에 overflow: hidden을 사용한다.->현재는 제일 많이 사용
+4. clearfix를 사용한다.
+*/
+
+
+/* 전체 메뉴 */
+.nav {
+    overflow: hidden;
+    padding: 30px 0;
+}
+.nav > div {
+    float: left;
+    width: 40%;
+}
+.nav > div:last-child {
+    width: 20%; /* ie9부터 사용가능 */
+}
+.nav > div h3 {
+    font-size: 18px;
+    color: #25a2d0;
+    margin-bottom: 4px;
+}
+.nav > div ol {
+    overflow: hidden;
+}
+.nav > div ol li {
+    float: left;
+    width: 50%;
+}
+.nav > div:last-child ol li {
+    width: 100%;
+}
+.nav > div ol li a:hover {
+    text-decoration: underline;
+}
+
+/* 타이틀 */
+.tit {
+    position: relative; /* 기준점 역할 */
+}
+.tit h2 {
+    color: #2c94c4;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    font-family: 'Nanum Brush Script', cursive;
+}
+.tit .btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/icon.png) no-repeat 0 -600px;
+}
+
+/* 배너 */
+.ban {
+    position: relative;
+}
+.ban a.prev {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 43px;
+    height: 43px;
+}
+.ban a.next {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 43px;
+    height: 43px;
+}
+.ban ul {
+    overflow: hidden;
+}
+.ban ul li {
+    float: left;
+    width: 330px;
+}
+.ban ul li:last-child {
+    text-align: right; /* ie9부터 사용가능 */
+}
+.ban ul li:nth-child(2) {
+    text-align: center; /* ie9부터 사용가능 */
 }
