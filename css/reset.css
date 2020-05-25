@@ -16,6 +16,11 @@ body, input, textarea, select, button, table {
     line-height: 1.5;
 }
 
+/* 폰트 스타일 초기화 */
+em {
+    font-style: normal;
+}
+
 /* a 링크 초기화 */
 a {
     text-decoration: none;
