@@ -588,3 +588,42 @@
 .tab_menu ul li.active ul li a {
     color: #333;
 }
+
+/* 게시판4 */
+.notice4 {
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 5px;
+    margin-top: -1px;
+}
+.notice4 h4 {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    padding: 3px 8px 8px 8px;
+}
+.notice4 ul {
+    padding-top: 5px;
+    font-size: 12px;
+    padding: 8px 3px 4px 2px;
+}
+.notice4 ul li {
+    overflow: hidden;
+    background: url(../img/dot.gif) no-repeat 2px 8px;
+}
+.notice4 ul li a {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    width: 65%;
+    margin-left: 12px;
+}
+.notice4 ul li span {
+    float: right;
+}
+.notice4 .more {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
