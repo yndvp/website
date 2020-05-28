@@ -727,6 +727,7 @@
 }
 .gallery .gallery_btn ul li {
     float: left;
+    margin: 1px 2px;
 }
 .gallery .gallery_btn ul li a {
     display: block;
@@ -734,17 +735,109 @@
     height: 23px;
     background: url(../img/icon.png) no-repeat;
 }
-.gallery .gallery_btn li.gb_icon1 {}
-.gallery .gallery_btn li.gb_icon2 {}
-.gallery .gallery_btn li.gb_icon3 {}
-.gallery .gallery_btn li.gb_icon4 {}
-
-
-
-.gallery .gallery_img {}
-.gallery .gallery_img ul {}
-.gallery .gallery_img ul li {}
-.gallery .gallery_img ul li a {}
+.gallery .gallery_btn li.gb_icon1 a {
+    background-position: -150px -120px;
+}
+.gallery .gallery_btn li.gb_icon2 a {
+    background-position: -150px -143px;
+}
+.gallery .gallery_btn li.gb_icon3 a {
+    background-position: -150px -166px;
+}
+.gallery .gallery_btn li.gb_icon4 a {
+    background-position: -150px -189px;
+}
+.gallery .gallery_btn li.gb_icon1 a:hover {
+    background-position: -173px -120px;
+}
+.gallery .gallery_btn li.gb_icon2 a:hover {
+    background-position: -173px -143px;
+}
+.gallery .gallery_btn li.gb_icon3 a:hover {
+    background-position: -173px -166px;
+}
+.gallery .gallery_btn li.gb_icon4 a:hover {
+    background-position: -173px -189px;
+}
 .gallery .gallery_img img {
+    width: 100%;
+}
+
+/* 로그인 */
+#login_wrap {
+    margin-bottom: 15px;
+    background: #f2f4f5;
+    padding: 15px;
+}
+.login_header {
+    overflow: hidden;
+    font-size: 12px;
+    height: 30px;
+}
+.login_header .lh_check {
+    float: left;
+    padding-right: 15px;
+}
+.login_header .lh_check .input_check {
+    vertical-align: -2px;
+}
+.login_header .lh_ip {
+    float: left;
+}
+.login_header .lh_ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+.login_content {
+    position: relative;
+}
+.login_content .lc_text {}
+.login_content .input_text {
+    width: 180px;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    background: #fff;
+}
+.login_content .lc_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+.login_footer {}
+.login_footer li {
+    display: inline;
+}
+.login_footer li a {
+    font-size: 12px;
+}
+
+/* 팝업 */
+.popup {
+    margin-top: 15px;
+}
+.popup h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0093bd;
+    padding-bottom: 4px;
+}
+.popup ul {
+    overflow: hidden;
+}
+.popup ul li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+}
+.popup ul li.last {
+    margin-right: 0;
+}
+.popup ul li img {
     width: 100%;
 }
