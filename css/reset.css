@@ -23,6 +23,7 @@ em, address {
 
 /* a 링크 초기화 */
 a {
+    color: #222;
     text-decoration: none;
 }
 a:hover {
